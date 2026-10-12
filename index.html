@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Robo School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <header class="header">
+      <a class="logo" href="#">ROBO.SCHOOL</a>
+      <nav class="nav" id="nav">
+        <a href="#about" data-i18n="nav.about">О школе</a>
+        <a href="#trainers" data-i18n="nav.trainers">Тренеры</a>
+        <a href="#price" data-i18n="nav.price">Стоимость</a>
+        <a class="nav__phone" href="tel:+78000001122">+7 800 000 11 22</a>
+      </nav>
+      <div class="header__right">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="kk">ҚАЗ</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="phone" href="tel:+78000001122">+7 800 000 11 22</a>
+        <button class="burger" id="burger" type="button" aria-label="Меню" data-i18n-aria="menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="hero__inner">
+      <div class="hero__text">
+        <h1>ROBO SCHOOL</h1>
+        <p data-i18n="hero.text">Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
+        <a class="btn" href="#form" data-i18n="hero.btn">Записаться на курс</a>
+      </div>
+
+      <div class="hero__visual">
+        <img src="img/girl.png" alt="Педагог">
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <p class="about__lead" data-i18n="about.lead">
+      <b>Robo School</b> — учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat__num">10</div>
+        <p class="stat__label" data-i18n="stat.1">УМК по различным направлениям по робототехнике</p>
+      </div>
+      <div class="stat">
+        <div class="stat__num">20</div>
+        <p class="stat__label" data-i18n="stat.2">Школ, в которых запущена робототехника</p>
+      </div>
+      <div class="stat">
+        <div class="stat__num">100</div>
+        <p class="stat__label" data-i18n="stat.3">Педагогов прошедших курсы повышения квалификации</p>
+      </div>
+      <div class="stat">
+        <div class="stat__num">10 000</div>
+        <p class="stat__label" data-i18n="stat.4">Обученных детей на базе собственных центров</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="benefits__inner">
+      <h2 data-i18n="b.title">Что вы получите после курса</h2>
+      <div class="benefits__grid">
+        <div>
+          <h3 data-i18n="b1.t">Удостоверение</h3>
+          <p data-i18n="b1.p">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+        </div>
+        <div>
+          <h3 data-i18n="b2.t">Знания</h3>
+          <p data-i18n="b2.p">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+        </div>
+        <div>
+          <h3><span data-i18n="b3.t">Практику</span>
+            <span class="info" tabindex="0">i<span class="info__tip" data-i18n="b3.tip">При наличии свободных мест</span></span>
+          </h3>
+          <p data-i18n="b3.p">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trainers" id="trainers">
+    <h2 data-i18n="tr.title">Профессиональные тренеры</h2>
+
+    <div class="slider" id="slider">
+        <article class="trainer" data-id="irina">
+          <div class="trainer__photo"><img src="img/irina.png" alt="Ирина Лайм" onerror="this.remove()"></div>
+          <h3 data-i18n="name.irina">Ирина Лайм</h3>
+          <p data-i18n="role.robo">преподаватель по робототехнике</p>
+          <a href="#" class="trainer__more" data-i18n="more">Подробнее</a>
+        </article>
+        <article class="trainer" data-id="marina">
+          <div class="trainer__photo"><img src="img/Marina.png" alt="Марина Орлова" onerror="this.remove()"></div>
+          <h3 data-i18n="name.marina">Марина Орлова</h3>
+          <p data-i18n="role.robo">преподаватель по робототехнике</p>
+          <a href="#" class="trainer__more" data-i18n="more">Подробнее</a>
+        </article>
+        <article class="trainer" data-id="maxim">
+          <div class="trainer__photo"><img src="img/Maks.png" alt="Максим Петров" onerror="this.remove()"></div>
+          <h3 data-i18n="name.maxim">Максим Петров</h3>
+          <p data-i18n="role.prog">преподаватель по программированию</p>
+          <a href="#" class="trainer__more" data-i18n="more">Подробнее</a>
+        </article>
+        <article class="trainer" data-id="konstantin">
+          <div class="trainer__photo"><img src="img/Konstantin.png" alt="Константин Назаров" onerror="this.remove()"></div>
+          <h3 data-i18n="name.konstantin">Константин Назаров</h3>
+          <p data-i18n="role.robo">преподаватель по робототехнике</p>
+          <a href="#" class="trainer__more" data-i18n="more">Подробнее</a>
+        </article>
+        <article class="trainer" data-id="liza">
+          <div class="trainer__photo"><img src="img/Lizassk.png" alt="Лиза Весенняя" onerror="this.remove()"></div>
+          <h3 data-i18n="name.liza">Лиза Весенняя</h3>
+          <p data-i18n="role.robo">преподаватель по робототехнике</p>
+          <a href="#" class="trainer__more" data-i18n="more">Подробнее</a>
+        </article>
+    </div>
+
+    <div class="slider-nav">
+      <div class="progress" id="track"><div class="progress__thumb" id="thumb"></div></div>
+      <div class="arrows">
+        <button class="arrow" id="prev" aria-label="Назад">&#8249;</button>
+        <button class="arrow" id="next" aria-label="Вперёд">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="price">
+    <div class="pricing__inner">
+      <h2 data-i18n="pr.title">Выберите нужный пакет</h2>
+      <div class="pricing__grid">
+        <article class="plan plan--pro">
+          <h3>— PRO —</h3>
+          <div class="plan__price">20.000 ₽</div>
+          <p data-i18n="plan.1">УМК по робототехнике<br>и программированию</p>
+          <button class="btn btn--block open-apply" data-pack="PRO" data-i18n="apply.btn">Оставить заявку</button>
+        </article>
+        <article class="plan">
+          <h3>— ROBO —</h3>
+          <div class="plan__price">15.000 ₽</div>
+          <p data-i18n="plan.2">УМК по робототехнике</p>
+          <button class="btn btn--block open-apply" data-pack="ROBO" data-i18n="apply.btn">Оставить заявку</button>
+        </article>
+        <article class="plan">
+          <h3>— PROG —</h3>
+          <div class="plan__price">10.000 ₽</div>
+          <p data-i18n="plan.3">УМК по программированию</p>
+          <button class="btn btn--block open-apply" data-pack="PROG" data-i18n="apply.btn">Оставить заявку</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo" id="form">
+    <div class="promo__inner">
+      <div class="promo__text">
+        <h2 data-i18n="promo.h">Запишитесь на курс<br>со скидкой 10%</h2>
+        <p data-i18n="promo.p">Акция действительна до 10 марта 2022 года</p>
+      </div>
+      <form class="form" id="promo-form">
+        <input type="text" name="name" placeholder="Имя" data-i18n-ph="ph.name" required autocomplete="name">
+        <input type="tel" name="phone" placeholder="Телефон" data-i18n-ph="ph.phone" required autocomplete="tel" inputmode="tel" pattern="[\d+()\-\s]{10,}">
+        <input type="email" name="email" placeholder="E-mail" data-i18n-ph="ph.email" required autocomplete="email">
+        <button class="btn btn--dark" type="submit" data-i18n="promo.submit">Оформить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">ROBO.SCHOOL</div>
+        <p>© ROBO.SCHOOL</p>
+      </div>
+      <a class="footer__phone" href="tel:+78000001122">+7 800 000 11 22</a>
+    </div>
+  </footer>
+
+
+  <script>
+    (() => {
+      const slider = document.getElementById('slider');
+      const track = document.getElementById('track');
+      const thumb = document.getElementById('thumb');
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      const GAP = 18;
+      let dragging = false, grab = 0;
+
+      const step = () => slider.querySelector('.trainer').offsetWidth + GAP;
+      const maxScroll = () => slider.scrollWidth - slider.clientWidth;
+
+      /* полоска прогресса + недоступные стрелки на краях */
+      function paint() {
+        const max = maxScroll();
+        const w = Math.min(slider.clientWidth / slider.scrollWidth, 1) * 100;
+        const p = max > 0 ? slider.scrollLeft / max : 0;
+        thumb.style.width = w + '%';
+        thumb.style.left = (p * (100 - w)) + '%';
+        prev.disabled = slider.scrollLeft <= 1;
+        next.disabled = slider.scrollLeft >= max - 1;
+      }
+      slider.addEventListener('scroll', paint);
+      window.addEventListener('resize', paint);
+      window.addEventListener('load', paint);
+
+      /* перетаскивание полоски */
+      function scrollToPointer(clientX) {
+        const r = track.getBoundingClientRect();
+        const free = Math.max(r.width - thumb.offsetWidth, 1);
+        const left = Math.max(0, Math.min(free, clientX - r.left - grab));
+        slider.scrollLeft = (left / free) * maxScroll();
+      }
+      track.addEventListener('pointerdown', e => {
+        dragging = true;
+        slider.classList.add('no-snap');
+        track.setPointerCapture(e.pointerId);
+        const t = thumb.getBoundingClientRect();
+        grab = e.target === thumb ? e.clientX - t.left : t.width / 2;
+        scrollToPointer(e.clientX);
+      });
+      track.addEventListener('pointermove', e => { if (dragging) scrollToPointer(e.clientX); });
+      const stopDrag = () => {
+        if (!dragging) return;
+        dragging = false;
+        slider.classList.remove('no-snap');
+      };
+      track.addEventListener('pointerup', stopDrag);
+      track.addEventListener('pointercancel', stopDrag);
+
+      /* стрелки */
+      next.onclick = () => slider.scrollBy({ left: step(), behavior: 'smooth' });
+      prev.onclick = () => slider.scrollBy({ left: -step(), behavior: 'smooth' });
+
+      paint();
+    })();
+  </script>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel modal__panel--person" role="dialog" aria-modal="true" aria-labelledby="m-name">
+      <button class="person__close" data-close data-i18n="close">Закрыть</button>
+
+      <div class="person__head">
+        <div class="person__avatar"><img id="m-photo" alt=""></div>
+        <div>
+          <h3 id="m-name"></h3>
+          <p class="person__role" id="m-role"></p>
+          <div class="person__social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="9" height="9" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" role="tab" data-tab="edu" data-i18n="tab.edu">Образование</button>
+        <button class="tab" role="tab" data-tab="work" data-i18n="tab.work">Опыт работы</button>
+        <button class="tab" role="tab" data-tab="awards" data-i18n="tab.awards">Награды</button>
+      </div>
+
+      <div class="person__content" id="m-content" tabindex="0"></div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      /* Данные тренеров — ключ = data-id карточки. Текст: [рус, қаз, eng] или одна строка для всех языков. */
+      const L = (ru, kk, en) => [ru, kk, en];
+      const IDX = { ru: 0, kk: 1, en: 2 };
+      const pick = v => Array.isArray(v) ? (v[IDX[window.getLang()]] ?? v[0]) : v;
+      const now = y => L(`${y} — настоящее время`, `${y} — қазіргі уақыт`, `${y} — present`);
+      const FULL = L('Форма обучения: Очная', 'Оқу түрі: Күндізгі', 'Form of study: Full-time');
+      const JOB_ROBO = L('Должность: Преподаватель по робототехнике', 'Лауазымы: Робототехника оқытушысы', 'Position: Robotics teacher');
+      const JOB_PROG = L('Должность: Преподаватель по программированию', 'Лауазымы: Бағдарламалау оқытушысы', 'Position: Programming teacher');
+
+      const TRAINERS = {
+        marina: {
+          edu: [
+            { items: [{ period: L('Сентябрь 1995 — Июнь 2000', '1995 жылғы қыркүйек — 2000 жылғы маусым', 'September 1995 — June 2000'), lines: [
+                L('Санкт-Петербургский политехнический университет Петра Великого', 'Ұлы Петр атындағы Санкт-Петербург политехникалық университеті', 'Peter the Great St. Petersburg Polytechnic University'),
+                L('Факультет: Компьютерные науки и технологии', 'Факультет: Компьютерлік ғылымдар және технологиялар', 'Faculty: Computer Science and Technology'),
+                L('Специальность: Математика и компьютерные науки', 'Мамандығы: Математика және компьютерлік ғылымдар', 'Major: Mathematics and Computer Science'),
+                FULL ] }] },
+            { title: L('Курсы и тренинги', 'Курстар мен тренингтер', 'Courses and trainings'),
+              items: [{ period: L('Ноябрь 2020 — Февраль 2021', '2020 жылғы қараша — 2021 жылғы ақпан', 'November 2020 — February 2021'), lines: [
+                L('Программа дополнительного образования «3D Моделирование»', '«3D Модельдеу» қосымша білім беру бағдарламасы', 'Additional education program “3D Modeling”'),
+                L('Место прохождения: Институт дополнительного образования «Политех»', 'Өту орны: «Политех» қосымша білім беру институты', 'Location: “Polytech” Institute of Additional Education') ] }] }
+          ],
+          work: [{ items: [
+            { period: now(2015), lines: ['Robo School', JOB_ROBO] },
+            { period: '2010 — 2015', lines: [L('Школа № 1', '№ 1 мектеп', 'School No. 1'), L('Должность: Учитель информатики', 'Лауазымы: Информатика мұғалімі', 'Position: Computer science teacher')] }] }],
+          awards: [{ items: [{ period: '2019', lines: [L('Победитель региональной олимпиады по робототехнике (наставник команды)', 'Робототехника бойынша аймақтық олимпиада жеңімпазы (команда тәлімгері)', 'Winner of a regional robotics olympiad (team mentor)')] }] }]
+        },
+        irina: {
+          edu: [{ items: [{ period: '2008 — 2013', lines: [
+            L('Педагогический университет', 'Педагогикалық университет', 'Pedagogical University'),
+            L('Факультет: Начальное образование', 'Факультет: Бастауыш білім', 'Faculty: Primary Education'), FULL] }] }],
+          work: [{ items: [{ period: now(2016), lines: ['Robo School', JOB_ROBO] }] }],
+          awards: [{ items: [{ period: '2021', lines: [L('Лучший педагог года по версии школы', 'Мектеп нұсқасы бойынша жылдың үздік педагогі', 'Teacher of the year as chosen by the school')] }] }]
+        },
+        maxim: {
+          edu: [{ items: [{ period: '2004 — 2009', lines: [
+            L('Технический университет', 'Техникалық университет', 'Technical University'),
+            L('Факультет: Информационные технологии', 'Факультет: Ақпараттық технологиялар', 'Faculty: Information Technology'), FULL] }] }],
+          work: [{ items: [{ period: now(2012), lines: ['Robo School', JOB_PROG] }] }],
+          awards: [{ items: [{ period: '2018', lines: [L('Диплом за подготовку призёров олимпиады по программированию', 'Бағдарламалау олимпиадасының жүлдегерлерін дайындағаны үшін диплом', 'Diploma for preparing prize winners of a programming olympiad')] }] }]
+        },
+        konstantin: {
+          edu: [{ items: [{ period: '2005 — 2010', lines: [
+            L('Институт электроники', 'Электроника институты', 'Institute of Electronics'),
+            L('Специальность: Мехатроника и робототехника', 'Мамандығы: Мехатроника және робототехника', 'Major: Mechatronics and Robotics')] }] }],
+          work: [{ items: [{ period: now(2014), lines: ['Robo School', JOB_ROBO] }] }],
+          awards: [{ items: [{ period: '2020', lines: [L('Команда учеников — призёры чемпионата по робототехнике', 'Оқушылар командасы — робототехника чемпионатының жүлдегерлері', 'Student team — prize winners of a robotics championship')] }] }]
+        },
+        liza: {
+          edu: [{ items: [{ period: '2015 — 2020', lines: [
+            L('Университет', 'Университет', 'University'),
+            L('Факультет: Педагогика и психология', 'Факультет: Педагогика және психология', 'Faculty: Pedagogy and Psychology')] }] }],
+          work: [{ items: [{ period: now(2021), lines: ['Robo School', JOB_ROBO] }] }]
+        }
+      };
+
+      const modal = document.getElementById('modal');
+      const content = document.getElementById('m-content');
+      const tabs = [...modal.querySelectorAll('.tab')];
+      const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      let current = null, card = null, activeTab = 'edu', lastFocus = null;
+
+      function render(tab) {
+        activeTab = tab;
+        const blocks = (current && current[tab]) || [{ items: [{ period: '', lines: [window.t('empty')] }] }];
+        content.innerHTML = blocks.map(b =>
+          (b.title ? `<h4>${esc(pick(b.title))}</h4>` : '') +
+          b.items.map(it =>
+            `<div class="entry">` +
+            (it.period ? `<p class="entry__period">${esc(pick(it.period))}</p>` : '') +
+            it.lines.map(l => `<p>${esc(pick(l))}</p>`).join('') +
+            `</div>`).join('')
+        ).join('');
+        content.scrollTop = 0;
+        content.classList.remove('fade'); void content.offsetWidth; content.classList.add('fade');
+        tabs.forEach(t => { const on = t.dataset.tab === tab; t.classList.toggle('is-active', on); t.setAttribute('aria-selected', on); });
+      }
+
+      function fillHead() {
+        const name = card.querySelector('h3').textContent;
+        const img = card.querySelector('img');
+        document.getElementById('m-name').textContent = name;
+        document.getElementById('m-role').textContent = card.querySelector('p').textContent;
+        const photo = document.getElementById('m-photo');
+        photo.src = img ? img.src : '';
+        photo.alt = name;
+        photo.style.display = img ? '' : 'none';
+      }
+
+      function openModal(c) {
+        card = c;
+        current = TRAINERS[c.dataset.id] || null;
+        fillHead();
+        render('edu');
+        lastFocus = document.activeElement;
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('no-scroll');
+        modal.querySelector('.person__close').focus();
+      }
+
+      function closeModal() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('no-scroll');
+        if (lastFocus) lastFocus.focus();
+      }
+
+      /* смена языка при открытом окне */
+      document.addEventListener('langchange', () => {
+        if (modal.classList.contains('is-open')) { fillHead(); render(activeTab); }
+      });
+
+      document.getElementById('slider').addEventListener('click', e => {
+        const link = e.target.closest('.trainer__more');
+        if (!link) return;
+        e.preventDefault();
+        openModal(link.closest('.trainer'));
+      });
+      tabs.forEach(t => t.addEventListener('click', () => render(t.dataset.tab)));
+      modal.addEventListener('click', e => { if (e.target.closest('[data-close]')) closeModal(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+    })();
+  </script>
+
+  <div class="modal" id="apply" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel modal__panel--form" role="dialog" aria-modal="true" aria-labelledby="apply-title">
+      <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+
+      <div class="apply__form">
+        <h3 id="apply-title" data-i18n="apply.title">Заявка на курс</h3>
+        <p class="apply__pack" id="apply-pack"></p>
+        <form class="form form--light" id="apply-form">
+          <input type="hidden" name="package" id="apply-pack-input">
+          <input type="text" name="name" placeholder="Имя" data-i18n-ph="ph.name" required autocomplete="name">
+          <input type="tel" name="phone" placeholder="Телефон" data-i18n-ph="ph.phone" required autocomplete="tel" inputmode="tel" pattern="[\d+()\-\s]{10,}">
+          <input type="email" name="email" placeholder="E-mail" data-i18n-ph="ph.email" required autocomplete="email">
+          <button class="btn btn--block" type="submit" data-i18n="apply.send">Отправить заявку</button>
+          <p class="apply__note" data-i18n="apply.note">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
+        </form>
+      </div>
+
+      <div class="apply__done" aria-live="polite">
+        <div class="apply__check">&#10003;</div>
+        <h3 data-i18n="done.t">Заявка отправлена</h3>
+        <p data-i18n="done.p">Мы свяжемся с вами в ближайшее время.</p>
+        <button class="btn" data-close data-i18n="close">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const modal = document.getElementById('apply');
+      const form = document.getElementById('apply-form');
+      const PRICES = { PRO: '20.000 ₽', ROBO: '15.000 ₽', PROG: '10.000 ₽' };
+      let currentPack = null;
+      const setPack = () => {
+        document.getElementById('apply-pack').textContent =
+          currentPack ? `${window.t('pack')} ${currentPack} — ${PRICES[currentPack]}` : '';
+      };
+      document.addEventListener('langchange', setPack);
+      let lastFocus = null;
+
+      function open(pack) {
+        lastFocus = document.activeElement;
+        modal.classList.remove('is-sent');
+        form.reset();
+        currentPack = pack; setPack();
+        document.getElementById('apply-pack-input').value = pack || '';
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('no-scroll');
+        setTimeout(() => form.elements.name.focus(), 50);
+      }
+      function close() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('no-scroll');
+        if (lastFocus) lastFocus.focus();
+      }
+
+      document.querySelectorAll('.open-apply').forEach(b => b.addEventListener('click', () => open(b.dataset.pack)));
+      modal.addEventListener('click', e => { if (e.target.closest('[data-close]')) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('is-open')) close(); });
+
+      /* телефон: только цифры и + ( ) - */
+      document.querySelectorAll('input[type=tel]').forEach(i =>
+        i.addEventListener('input', () => { i.value = i.value.replace(/[^\d+()\-\s]/g, ''); }));
+
+      /* Отправка. Сейчас данные никуда не уходят — подключи свой сервер вместо console.log */
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        console.log('Заявка:', Object.fromEntries(new FormData(form)));
+        modal.classList.add('is-sent');
+      });
+
+      const promo = document.getElementById('promo-form');
+      promo.addEventListener('submit', e => {
+        e.preventDefault();
+        console.log('Заявка (скидка 10%):', Object.fromEntries(new FormData(promo)));
+        const btn = promo.querySelector('button');
+        btn.textContent = window.t('promo.sent');
+        btn.disabled = true;
+        setTimeout(() => { promo.reset(); btn.textContent = window.t('promo.submit'); btn.disabled = false; }, 3000);
+      });
+    })();
+  </script>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Наверх" data-i18n-aria="top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="java.js"></script>
+  <script src="Javae.js"></script>
+
+</body>
+</html>
